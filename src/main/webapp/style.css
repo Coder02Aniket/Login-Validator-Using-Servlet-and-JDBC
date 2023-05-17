@@ -1,0 +1,44 @@
+*{
+    margin : 0 auto ;
+    box-sizing: border-box;
+    padding:0 ;
+}
+body{
+    overflow-x: hidden;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    font-weight: bold;
+    overflow-y: auto;
+    
+}
+.container{
+    display: grid;
+    
+    padding:20px;
+    height: 80%;
+    border:3px solid cyan ;
+
+    margin:20px auto ;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.container .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+    padding:15px;
+    user-select: none;
+    
+    cursor :pointer;
+    
+}
+.container .buttons div{
+
+    border: 2px solid blueviolet;
+    padding:20px;
+}

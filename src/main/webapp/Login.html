@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+                *{
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        body{
+            overflow-x: hidden;
+
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+            font-family: sans-serif;
+            font-weight: 500;
+            overflow-y: auto;
+
+        }
+        .container{
+            display: grid;
+
+            border : 3px solid burlywood ;
+            height: 80%;
+            margin: 20px auto;
+            max-width: 80%;
+            padding:20px;
+        }
+
+        form #sub{
+            display: grid;
+        }
+
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login" style="font-weight:bold">Login</div>
+        <div class="form">
+            <form action="./validate" method="post">
+                <label>Username : </label>
+                <input type="text" name="usern">
+                <br><br>
+                <label>Password : </label>
+                <input type="password" name="pass">
+                <br><br>
+                <input type = "submit" value="Login" id = "sub">
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
